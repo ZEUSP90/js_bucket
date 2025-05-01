@@ -1,0 +1,157 @@
+/*
+const fs = require('fs');
+const data = fs.readFileSync('a.txt','hex');
+console.log(data);
+*/
+
+/*
+let a = 0;
+for(let i = 1;i<=100000000;i++)
+{
+  a = a+1;
+}
+console.log(a);
+*/
+
+/*
+function sum(a,b)
+{
+  return a+b;
+}
+
+function multi(a,b)
+{
+  return a*b;
+}
+
+function sub(a,b)
+{
+  return a - b;
+}
+
+function divide(a,b)
+{
+  return a/b;
+}
+
+function doOperation(a,b,op)
+{
+  return op(a,b);
+}
+console.log(doOperation(1,2,divide));
+*/
+
+/*
+const fs = require("fs");
+function give_res(err,data)
+{
+  if(err)
+  {
+    console.log("file not found");
+  }
+  else
+  {
+    console.log(data);
+  }
+}
+fs.readFile("a.txt","hex",give_res);
+*/
+
+/*
+const fs = require("fs");
+function print(err,data)
+{
+  console.log(err);
+  console.log(data);
+  for(let i = 0;i<=5;i++)
+  {
+    console.log(i);
+  }
+}
+fs.readFile("a.txt","utf-8",print);
+console.log("upper code is running");
+*/
+
+/*
+function timeout()
+{
+  console.log("bomb detonated 💥");
+}
+
+console.log("runn !!!");
+setTimeout(timeout,5000);
+console.log("bomb has been planted ⏳");
+
+for(let i = 0;i <=10000000000;i++)
+{
+  i = i+1;
+}
+*/
+
+/*
+class Rect
+{
+  constructor(width,height,color)
+  {
+    this.width = width;
+    this.height = height;
+    this.color = color;
+  }
+  area()
+  {
+    const area = this.width * this.height;
+    return area;
+  }
+  paint()
+  {
+    console.log(`painting with color ${this.color}`);
+  }
+}
+const rect = new Rect(2,5,"green");
+const area = rect.area();
+rect.paint();
+console.log(area);
+*/
+
+/*
+const data = new Date();
+console.log(data);
+*/
+
+/*
+const map = new Map();
+map.set('name','alice');
+map.set('age',30);
+map.set('address',"poland");
+console.log(map.get('address')); 
+*/
+
+/*
+function give_me()
+{
+  console.log("hello");
+}
+setTimeout(give_me,5000); 
+*/
+
+/*
+function setTimeoutPromisified(ms)
+{
+  return new Promise(resolve => setTimeout(resolve,ms))
+}
+function call()
+{
+  console.log("yes yes yes");
+}
+setTimeoutPromisified(5000).then(call);
+*/
+/*
+function setTimeoutPromisified(ms)
+{
+  const p = new Promise();
+  return p;
+}
+
+let p = setTimeoutPromisified(3000);
+console.log(p);
+*/  
